@@ -25,7 +25,7 @@ CIADC = CIADC(n,beta,rho,kappa,T,osr, nperseg=1<<15)
 
 # CIADC.plot_atf()
 
-CIADC.run_digital_estimator(ctrl_sig_filename, recalculate=False)
+CIADC.run_digital_estimator(ctrl_sig_filename, recalculate=True)
 
 CIADC.plot_estimate_psd(states=[1, 3, 5], print_snr=True, save_fig=True)
 
